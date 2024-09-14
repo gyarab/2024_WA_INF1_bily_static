@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Helvetica, Sans-Serif;
+  }
+
+  h1 {
+    margin: 0;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: black;
+    background-color: lightgrey;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 600px;
+    font-family: Helvetica, Sans-Serif;
+    color: darkgrey;
+    background-color: white;
+  }
+
+  .imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.intro {
+  padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
