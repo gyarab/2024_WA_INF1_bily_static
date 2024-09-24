@@ -45,17 +45,17 @@ body {
   text-align: justify;
   font-size: 18px;
   padding-top: 100px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    padding-left: 60px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 80px;
 }
 
 .ul {
   text-align: justify;
   font-size: 18px;
-  padding-top: 10px;
-    padding-right: 40px;
-    padding-bottom: 150px ;
+  padding-top: px;
+    padding-right: 100px;
+    padding-bottom: 150px;
     padding-left: 100px;
 }
 
@@ -100,5 +100,15 @@ footer {
   clear: both;
   position: relative;
   height: 20px;
-  margin-top: 50px;
+  margin: 50px;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: 20px
+}
+
+th, td {
+  padding: 10px;
 }
