@@ -13,7 +13,17 @@ body {
     padding-bottom: 50px;
     padding-left: 80px;
     color: black;
-    background-color: lightgrey;
+    text-shadow: 1px 3px 10px #000000;
+    text-decoration: underline overline;
+    background-image: linear-gradient(to bottom right, red, yellow);
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; bottom:0px;}
+    25%  {background-color:yellow; left:0px; bottom:0px;}
+    50%  {background-color:blue; left:0px; bottom:200px;}
+    75%  {background-color:green; left:0px; bottom:200px;}
+    100% {background-color:red; left:0px; bottom:0px;}
   }
 
   h2 {
@@ -21,12 +31,29 @@ body {
     float: right;
     color: darkgrey;
   }
+
+  div > p {
+    background-color: black;
+    color: white;
+    text-indent: 50px;
+  }
+
+  div p {
+    background-color: black;
+    color: white;
+    text-indent: 50px;
+  }
+  
   .slogan{
     margin: 0;
     padding-top: 10px;
     padding-right: 60px;
     padding-bottom: 30px;
-    font-family: Helvetica, Sans-Serif;
+    line-height: 1;
+    background-color: black;
+    animation-name: example;
+    position: relative;
+    animation-duration: 10s;
   }
 
   .imgbox {
@@ -43,20 +70,13 @@ body {
     padding-left: 60px;
 }
 
-.ulp {
+#ulp {
   text-align: justify;
   font-size: 18px;
   padding-top: 100px;
     padding-right: 100px;
     padding-bottom: 10px;
     padding-left: 80px;
-}
-
-div > p {
-  background-color: yellow;
-}
-p {
-  background-color: green;
 }
 
 ul {
@@ -116,6 +136,22 @@ table {
   border: 1px solid;
   border-collapse: collapse;
   margin: 20px
+}
+
+table:hover {
+  background-color: yellow;
+}
+
+div:hover {
+  background-color: yellow;
+}
+
+p:hover {
+  background-color: yellow;
+}
+
+tr {
+  text-transform: uppercase;
 }
 
 th, td {
