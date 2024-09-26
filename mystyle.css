@@ -2,6 +2,8 @@ body {
     margin: 0;
     background-color: white;
     font-family: Helvetica, Sans-Serif;
+    background-image: url("https://external-preview.redd.it/2GzIgJKOpbkTb4-Iamc2AURxNdlPaiLBOMdzdRjAN-U.jpg?auto=webp&s=8e3bfd58c7beea1f696417679e463e712e96a9c0"), url("paper.gif");
+    background-color: #cccccc;
   }
 
   h1 {
@@ -50,7 +52,14 @@ body {
     padding-left: 80px;
 }
 
-.ul {
+div > p {
+  background-color: yellow;
+}
+p {
+  background-color: green;
+}
+
+ul {
   text-align: justify;
   font-size: 18px;
   padding-top: px;
