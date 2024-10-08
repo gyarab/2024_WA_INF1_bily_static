@@ -28,13 +28,13 @@ Stránka je strukturována následujícím způsobem:
     - **Banner**: Ilustrační obrázek interferogramu.
     - **Nadpisy**: Hlavní titulek a slogan stránky.
     - **Textové bloky**: Podrobné vysvětlení principů a komponent interferometrie.
-    - **Obrázkové galerie**: Obrázky ukazující nastavení interferometrů a profilometrická data.
+    - **Obrázková galerie**: Obrázky ukazující nastavení interferometrů a profilometrická data.
     - **Tabulka**: Kontakt na autora.
 
 ## Součásti
 
 - **HTML soubor**: Struktura webové stránky.
-- **CSS soubor**: (není součástí tohoto README) zajišťuje styly pro layout a formátování obsahu.
+- **CSS soubor**: zajišťuje styly pro layout a formátování obsahu.
 
 ## Požadavky
 
