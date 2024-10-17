@@ -23,15 +23,6 @@ header h1 {
 #menu ul li {
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-}
-
-.gallery .image {
-    width: 90%;
-}
 
 #menu ul li a {
     text-align: center;
@@ -48,17 +39,31 @@ header h1 {
 
 .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .container .item {
-    
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 25%
     flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 0;
-    
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.container .item p {
+    position: relative;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-indent: 2em;
+    padding: 10px;
+    display: none;
+}
+
+.container .item:hover p {
+    display: block;
 }
 
 @media screen and (max-width:600px) {
@@ -70,11 +75,7 @@ header h1 {
     margin: 0;
     padding: 10px;
 }
-.container .item p {
-    text-indent: 2em;
-    margin: 0;
-    padding: 10px;
-}
+
 .container .item:nth-child(1) h2 {  background-color: hsl(100, 90%, 20%); }
 .container .item:nth-child(1) p {   background-color: hsl(100, 90%, 90%); }
 .container .item:nth-child(2) h2 {  background-color: hsl(190, 90%, 20%); }
@@ -83,6 +84,33 @@ header h1 {
 .container .item:nth-child(3) p {   background-color: hsl(280, 90%, 90%); }
 .container .item:nth-child(4) h2 {  background-color: hsl(10, 90%, 20%); }
 .container .item:nth-child(4) p {   background-color: hsl(10, 90%, 90%); }
+
+.stick {
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+
+.gallery {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+}
+
+.gallery .image {
+    position: relative;
+    width: 90%;
+}
+
+.gallery .image p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
 
 .image {
     border: 1px solid black;
@@ -95,5 +123,6 @@ header h1 {
 .image p {
     margin: 0;
     padding: 10px;
+    
 }
 
